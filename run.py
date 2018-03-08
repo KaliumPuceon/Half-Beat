@@ -3,22 +3,23 @@ import numpy
 import aubio
 import sys
 
+print("load file")
 rate, wave = read("work.wav")
+print("file loaded")
 
 tempo = float(sys.argv[1])
-print(tempo)
 
 out = []
-wrap=0
 
+print("halving things")
 for k in range(len(wave)):
-    wrap = wrap -1
+
     if ((k/rate)*(tempo/60))%2>=1:
         out.append(wave[k])
 
+print("halving done")
+
 out = numpy.asarray(out)
 
-print (out == wave)
-
+print("save file")
 write("out.wav", rate, out)
-
