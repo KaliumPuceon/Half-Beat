@@ -27,6 +27,9 @@ The thing will sit for a while and spit out some ffmpeg messages and then once
 it's done your prompt will come back and the freshly created song will be in
 `out.mp3`. I'll add the ability to specify... anything... in the future.
 
+## Example output
+Here's a few of the things I made earlier. It's on my [tumblr](https://www.andmaybegayer.tumblr.com/tagged/EverySecondBeat)
+
 ## How work?
 I use ffmpeg to convert your file to wav. Aubio detects the tempo and passes it
 to python, along with your file. Python uses scipy's wav tools to read the thing
