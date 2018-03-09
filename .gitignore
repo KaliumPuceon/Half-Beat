@@ -2,6 +2,8 @@
 *.wav
 *.m4a
 *beatmap*
+beatmap
+
 # Created by https://www.gitignore.io/api/vim,python
 
 ### Python ###
