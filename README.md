@@ -39,6 +39,13 @@ that back to an mp3 and removes all the junk files. This is very finnicky, and
 it'll break a lot at the moment. When I don't have tests breathing down my neck
 I might improve this.
 
+## Testimonials
+"The shittiest form of audio compression" - James Lacey, 2018
+
+"Have you seen this monstrosity" - hopelesstiptoe, 2018
+
+"You were doing this at one in the morning. Why" - Stefan Schroder, 2018
+
 ## License
 There's a license in the LICENSE file but tl;dr you can share and modify for any
 purpose as long as you maintain the copyright, which is ISC.
