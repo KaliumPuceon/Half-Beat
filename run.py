@@ -1,6 +1,5 @@
 from scipy.io.wavfile import read, write
 import numpy
-import aubio
 import sys
 
 print("load file")
