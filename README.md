@@ -18,13 +18,24 @@ at least the last three will be in pip.
 
 ## USAGE
 once you've cloned the repo into wherever you want to work, use `chmod +x` to
-make `convert.sh` executable. To convert a file, run `./convert.sh $file`. This
-might work if you supply a full path, I have no idea. Probably copy your file
+make the two `.sh` files executable.
+
+There are two options for converting a file. Using `dynabeat.sh` will try and
+match every single beat of the song, however the detection is sketchy at best
+and while this might give you a clearer change, it'll be less consistent and
+more jerky.
+
+The other option is to use `fixedbeat.sh`. This uses a fixed tempo with zero
+offset, so ideally your song should start with a beat on or near the first
+sample of the file. I'll try and accommodate others... later.
+
+To use these, run `fixedbeat.sh $file` or `dynabeat.sh $file` to convert $file.
+This might work if you supply a full path, I have no idea. Probably copy your file
 into the working folder, and also make sure there's no spaces, this was one hell
 of a rush job.
 
-The thing will sit for a while and spit out some ffmpeg messages and then once
-it's done your prompt will come back and the freshly created song will be in
+The thing will sit for a while and spit out some messages and then once it's
+done your prompt will come back and the freshly created song will be in
 `out.mp3`. I'll add the ability to specify... anything... in the future.
 
 ## Example output
