@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "remove leftovers"
-rm out.mp3
+[ -e out.mp3 ] && rm out.mp3
 echo "convert to wav"
 ffmpeg -y -i $1 work.wav 2> /dev/null
 echo "determine tempo"
