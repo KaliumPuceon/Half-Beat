@@ -4,7 +4,9 @@
 Hey so there's this [meme going around on
 tumblr](http://spudislander.tumblr.com/post/171620330836/every-second-beat-of-sail-by-awolnation-you)
 and I wanted to get in on it but also I have no idea how to edit music, but I
-can write python so this happened.
+can write python so this happened. I've added a few things in the past few days,
+including a completely different way of doing the beat splits. Read on for more
+information.
 
 ## DEPENDENCIES
 You'll need to install:
@@ -15,6 +17,14 @@ You'll need to install:
 
 Assuming you're on linux that's probably available in your package manager, or
 at least the last three will be in pip.
+
+## WARNING
+I'm a massive python nerd, which means all my computers are set up to treat
+Python3 as default when I say `python`. If your computer is not set up like
+this, i.e. if you're running most distros except Arch Linux, you'll need to
+adjust the scripts and maybe a few other things to get this working. If you know
+how to make it detect which pythons are working and choose the right one, make a
+pull request.
 
 ## USAGE
 once you've cloned the repo into wherever you want to work, use `chmod +x` to
@@ -39,7 +49,7 @@ done your prompt will come back and the freshly created song will be in
 `out.mp3`. I'll add the ability to specify... anything... in the future.
 
 ## Example output
-Here's a few of the things I made earlier. It's on my [tumblr](https://www.andmaybegayer.tumblr.com/tagged/EverySecondBeat)
+Here's a few of the things I made earlier. It's on my [tumblr](www.andmaybegayer.tumblr.com/tagged/EverySecondBeat)
 
 ## How work?
 I use ffmpeg to convert your file to wav. Aubio detects the tempo and passes it
