@@ -69,7 +69,7 @@ I might improve this.
 
 "Please stop doing the music crimes" - Vulpes, 2018
 
-"Kalium, this is a very bad things and I want to pin a medal on your face" - Barometz, 2018
+"Kalium, this is a very bad thing and I want to pin a medal on your face" - Barometz, 2018
 
 "Ye gods, this is horrific" - Multiplexd, 2018
 
