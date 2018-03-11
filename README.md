@@ -67,6 +67,12 @@ I might improve this.
 
 "You were doing this at one in the morning. Why" - Stefan Schroder, 2018
 
+"Please stop doing the music crimes" - Vulpes, 2018
+
+"Kalium, this is a very bad things and I want to pin a medal on your face" - Barometz, 2018
+
+"Ye gods, this is horrific" - Multiplexd, 2018
+
 ## License
 There's a license in the LICENSE file but tl;dr you can share and modify for any
 purpose as long as you maintain the copyright, which is ISC.
