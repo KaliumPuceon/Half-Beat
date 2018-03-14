@@ -1,16 +1,20 @@
 #! /bin/bash
+set -e
 
-echo "remove leftovers"
-[ -e out.mp3 ] && rm out.mp3
+if which python3 > /dev/null; then
+    python=python3
+else
+    python=python
+fi
 echo "convert to wav"
-ffmpeg -y -i $1 work.wav 2> /dev/null
+ffmpeg -y -i "$1" work.wav 2> /dev/null
 echo "determine tempo"
 TEMPO=`aubio tempo work.wav 2> /dev/null`
 echo "Half-beating in progress"
-python fixed.py $TEMPO
-echo "Half-beating complete! Convert to mp3"
-ffmpeg -y -i out.wav out.mp3 2> /dev/null
+$python fixed.py $TEMPO
+echo "Half-beating complete! Convert to output file"
+ffmpeg -y -i out.wav "${2:-out.mp3}" 2> /dev/null
 echo "Cleaning up"
-rm *.wav
+rm out.wav work.wav
 echo "Done!"
 
