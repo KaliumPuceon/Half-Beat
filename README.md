@@ -11,25 +11,14 @@ information.
 ## DEPENDENCIES
 You'll need to install:
 * [ffmpeg](https://www.ffmpeg.org/)
-* [numpy](https://github.com/aubio/aubio)
+* [numpy](http://www.numpy.org/)
 * [scipy](https://www.scipy.org/)
-* [aubio](http://www.numpy.org/)
+* [aubio](https://github.com/aubio/aubio)
 
 Assuming you're on linux that's probably available in your package manager, or
 at least the last three will be in pip.
 
-## WARNING
-I'm a massive python nerd, which means all my computers are set up to treat
-Python3 as default when I say `python`. If your computer is not set up like
-this, i.e. if you're running most distros except Arch Linux, you'll need to
-adjust the scripts and maybe a few other things to get this working. If you know
-how to make it detect which pythons are working and choose the right one, make a
-pull request.
-
 ## USAGE
-once you've cloned the repo into wherever you want to work, use `chmod +x` to
-make the two `.sh` files executable.
-
 There are two options for converting a file. Using `dynabeat.sh` will try and
 match every single beat of the song, however the detection is sketchy at best
 and while this might give you a clearer change, it'll be less consistent and
@@ -39,14 +28,14 @@ The other option is to use `fixedbeat.sh`. This uses a fixed tempo with zero
 offset, so ideally your song should start with a beat on or near the first
 sample of the file. I'll try and accommodate others... later.
 
-To use these, run `fixedbeat.sh $file` or `dynabeat.sh $file` to convert $file.
-This might work if you supply a full path, I have no idea. Probably copy your file
-into the working folder, and also make sure there's no spaces, this was one hell
-of a rush job.
+To use these, run `./fixedbeat.sh $file` or `./dynabeat.sh $file` to convert
+$file, or run `./fixedbeat.sh $file $outfile` or `./dynabeat.sh $file $outfile`
+to output to $outfile instead of `out.mp3`.
 
 The thing will sit for a while and spit out some messages and then once it's
 done your prompt will come back and the freshly created song will be in
-`out.mp3`. I'll add the ability to specify... anything... in the future.
+`out.mp3` or the location you asked for. I'll add the ability to specify...
+anything... in the future.
 
 ## Example output
 Here's a few of the things I made earlier. It's on my [tumblr](www.andmaybegayer.tumblr.com/tagged/EverySecondBeat)
