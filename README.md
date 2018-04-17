@@ -38,7 +38,7 @@ done your prompt will come back and the freshly created song will be in
 anything... in the future.
 
 ## Example output
-Here's a few of the things I made earlier. It's on my [tumblr](www.andmaybegayer.tumblr.com/tagged/EverySecondBeat)
+Here's a few of the things I made earlier. It's on my [tumblr](https://andmaybegayer.tumblr.com/tagged/everysecondbeat)
 
 ## How work?
 I use ffmpeg to convert your file to wav. Aubio detects the tempo and passes it
