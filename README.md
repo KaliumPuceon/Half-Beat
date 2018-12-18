@@ -50,11 +50,11 @@ it'll break a lot at the moment. When I don't have tests breathing down my neck
 I might improve this.
 
 ## Testimonials
-"The shittiest form of audio compression" - James Lacey, 2018
+"The shittiest form of audio compression" - Victoria Longez, 2018
 
 "Have you seen this monstrosity" - hopelesstiptoe, 2018
 
-"You were doing this at one in the morning. Why" - Stefan Schroder, 2018
+"You were doing this at one in the morning. Why" - Stefan Schröder, 2018
 
 "Please stop doing the music crimes" - Vulpes, 2018
 
